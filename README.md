@@ -15,4 +15,4 @@ washington.csv
 
 
 ### Credits
-Credited to Jaekyung Lee, the future Data Scientist
+Credited to Jaekyung Lee, Donna Wong, Chuanyui Teh
