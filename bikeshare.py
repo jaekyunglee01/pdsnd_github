@@ -2,20 +2,11 @@ import time
 import pandas as pd
 import numpy as np
 
-<<<<<<< HEAD
 """
 This project is my first python project that strenghtens the basis in my future career.
 I believe that I can do it
 """
 
-||||||| merged common ancestors
-=======
-"""
-This project is my first python project that strenghtens the basis in my future career.
-I believe that I can do it.
-"""
-
->>>>>>> refactoring
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york': 'new_york_city.csv',
               'washington': 'washington.csv' }
@@ -234,12 +225,6 @@ def main():
 
 
 if __name__ == "__main__":
-<<<<<<< HEAD
-	main()
-||||||| merged common ancestors
-	main() 
-=======
 	main()
 
 #Thank you for reading my first python script!
->>>>>>> refactoring
