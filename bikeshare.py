@@ -2,6 +2,11 @@ import time
 import pandas as pd
 import numpy as np
 
+"""
+This project is my first python project that strenghtens the basis in my future career.
+I believe that I can do it
+"""
+
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york': 'new_york_city.csv',
               'washington': 'washington.csv' }
@@ -27,7 +32,7 @@ def get_filters():
             break
         else:
             print('You entered invalid city name! Please enter Chicago, New York or Washington. \n')
-    
+
     # get user input for month (all, january, february, ... , june)
     while True:
         month = input("Input a month you want to analyze or you can just enter \'all\' to apply no month filter \n"
@@ -102,7 +107,7 @@ def time_stats(df):
     month = df['Start Time'].dt.month
     weekday_name = df['Start Time'].dt.weekday_name
     hour = df['Start Time'].dt.hour
-    
+
     # display the most common month
     print('The most popular month is: ', month.mode()[0])
 
@@ -111,7 +116,7 @@ def time_stats(df):
 
     # display the most common start hour
     print('The most popular start hour: ', hour.mode()[0])
-    
+
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
@@ -202,7 +207,7 @@ def raw_data(df):
             break
         else:  #if user input is neither yes nor no!
             user_input = input('\nYou didn\'t enter a proper input.\nDo see more raw data? Enter YES or NO.\n')
-            
+
 def main():
     while True:
         city, month, day = get_filters()
@@ -213,11 +218,11 @@ def main():
         trip_duration_stats(df)
         user_stats(df)
         raw_data(df)
-        
+
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
             break
 
 
 if __name__ == "__main__":
-	main() 
+	main()
